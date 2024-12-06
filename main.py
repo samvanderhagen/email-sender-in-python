@@ -6,12 +6,10 @@ import smtplib
 email_sender = "samuelbezerra411@gmail.com"
 email_password = password
 
-email_receiver = "samvanderhagen@gmail.com"
+email_receiver = input("Send an email to: ")
 
-subject = "Default Email"
-body = """
-That's an email I will send to test my python skills!
-"""
+subject = input("Subject: ") 
+body = input("Body: ")
 
 em = EmailMessage()
 em['From'] = email_sender
